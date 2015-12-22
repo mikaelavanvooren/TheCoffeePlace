@@ -29,7 +29,7 @@ angular.module('myApp').service('cartService', function(){
     this.totalPrice = 0;
     this.totalQuantity = 0;
     this.data = [
-        {name: 'Black Coffee', photoSrc: 'TheCoffeePlace/images/blacktea.jpg', price: 2.75, quantity: 0},
+        {name: 'Black Coffee', photoSrc: "images/blacktea.jpg", price: 2.75, quantity: 0},
         {name: 'Cold Brew', photoSrc: 'images/coffeecoldbrew.JPG', price: 4, quantity: 0},
         {name: 'Latte with Art', photoSrc: 'images/latte-art.JPG', price: 3.50, quantity: 0},
         {name: 'Siphoned Coffee', photoSrc: 'images/coffeesiphon.JPG', price: 6, quantity: 0},
