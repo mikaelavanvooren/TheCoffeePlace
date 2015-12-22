@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Coffee Shopping</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css"/>
+</head>
+<div ng-app="myApp">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">The Coffee Place</a>
+            </div>
+            <div>
+                <ul class="nav navbar-nav">
+                    <li><a href="#/aboutUs">About Us</a></li>
+                    <li><a href="#/products">Our Products</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#/checkout">Checkout</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+        <div ng-view id="content">
+        </div>
+        <hr/>
+</div>
+</body>
+<footer class="text-center">
+    <div class="col-sm-4 col-md-4">
+        <h3>
+            ABOUT US
+        </h3>
+        <p>
+            Nunc cursus congue ante, et congue elit cursus at. Nulla consectetur sapien malesuada enim fermentum mattis.
+            Aliquam tempor lorem a lorem aliquet rutrum. Nulla semper neque et faucibus vulputate.
+        </p>
+    </div>
+    <div class="col-sm-4 col-md-4">
+        <h3>
+            SOCIAL LINKS
+        </h3>
+        <p>
+        </p>
+        <div id="socialMedia" class="text-center">
+            <span class="fa fa-instagram fa-3x"></span>
+            <span class="fa fa-twitter fa-3x"></span>
+            <span class="fa fa-facebook-square fa-3x"></span>
+            <p></p>
+        </div>
+        <p>
+        </p>
+    </div>
+    <div class="col-sm-4 col-md-4">
+        <h3>
+            LOCATION
+        </h3>
+        <p>
+            Nunc cursus congue ante, et congue elit cursus at. Nulla consectetur sapien malesuada enim fermentum mattis.
+            Aliquam tempor lorem a lorem aliquet rutrum. Nulla semper neque et faucibus vulputate.
+        </p>
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular-route.min.js"></script>
+<script src="app.js"></script>
+</html>

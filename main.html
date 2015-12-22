@@ -1,0 +1,66 @@
+<div id="Destinations">
+    <div id="mainImage">
+            <img src="images/coffee-bean.jpg" class="img-responsive">
+    </div>
+    <div class="jumbotron text-center">
+        <!--<div class="container">-->
+            <h1>The Coffee Place</h1>
+            <p>Coffee for everyone and even tea if you really like.</p>
+            <p>
+                unc cursus congue ante, et congue elit cursus at. Nulla consectetur sapien malesuada enim fermentum mattis.
+                Aliquam tempor lorem a lorem aliquet rutrum. Nulla semper neque et faucibus vulputate.
+                Pellentesque tellus ante, ultrices nec eros a, congue lobortis dui.
+                Ut augue nibh, sodales non elit sit amet, laoreet varius orci.
+            </p>
+        <!--</div>-->
+    </div>
+    <div data-spy="scroll" data-target=".navbar" data-offset="12" class="test">
+        <div id="Testimonials">
+            <div class="jumbotron text-center">
+                <h1>Product Reviews</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur,
+                    libero vehicula lobortis suscipit, lorem est imperdiet mauris, ac pulvinar leo urna et erat. Mauris lobortis,
+                    justo sed posuere tempor, arcu metus rhoncus urna, at porta ligula magna vitae velit. Phasellus quis pulvinar dui,
+                    vel suscipit tortor. Fusce nisi felis, feugiat id dignissim sed, hendrerit et eros. Sed quis mi vulputate,
+                    fringilla ipsum vel, accumsan eros. Aliquam ac elit id tellus auctor iaculis. Vestibulum vel sollicitudin eros.
+                    Morbi vitae faucibus orci.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="ContactUs">
+        <div class="container-fluid col-md-6 col-md-offset-3">
+            <h1>Contact Us</h1>
+            <p>We'd be happy to answer any questions you have. Please fill out this form and we'll get back to you as soon as possible.</p>
+            <form role="form" id="contact">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="text" class="form-control" id="email">
+                </div>
+
+                <p>Your favorite type of coffee</p>
+                <div class="radio">
+                    <label><input type="radio" name="optradio" class='places' value="black">Black</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio" class='places' value="Iced">Very Sweet</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio" class='places' value="none">Not a Fan</label>
+                </div>
+                <div class="form-group">
+                    <label for="comment">Your Message</label>
+                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                </div>
+                <button class="btn btn-info"  ng-click="hideForm();" id="formSubmit" type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+    <div id="filler" class="col-md-3">
+    </div>
+</div>

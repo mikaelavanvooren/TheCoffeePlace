@@ -1,0 +1,38 @@
+<br/>
+<br/>
+
+<div id="ourProducts" class="container-fluid">
+    <div class="col-md-12">
+        <br/>
+        <form class="navbar-form pull-right" role="search">
+            <div class="input-group">
+                <input ng-model="setFilter" type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+                <div class="input-group-btn">
+                    <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                </div>
+            </div>
+        </form>
+        <br/>
+        <br/>
+        <h1>Our Products</h1>
+    </div>
+    <div class="container">
+        <div ng-repeat="item in data | filter: setFilter">
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <h3>{{item.name}}</h3>
+                <img class="images" src={{item.photoSrc}} ALT="{{item.name}}" WIDTH=250 HEIGHT=250>
+                <p>Product description here</p>
+                <p>{{item.price | currency}}</p>
+                <form class="horizontal">
+                    <input type="number" min=0 max=20 ng-model="item.quantity"/>
+                    <button ng-click="updateQuantity($index);" type="Add" class="btn btn-success">Add to Cart</button>
+                </form>
+                <p>{{item.price*temp[$index] | currency}}</p>
+            </div>
+        </div>
+    </div>
+    <div id="totals">
+        <h3 class="col-md-6">Quantity: {{totalQuantity}}</h3>
+        <h3 class="col-md-6">Total: {{totalPrice | currency}}</h3>
+    </div>
+</div>
