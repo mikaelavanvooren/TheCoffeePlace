@@ -29,13 +29,13 @@ angular.module('myApp').service('cartService', function(){
     this.totalPrice = 0;
     this.totalQuantity = 0;
     this.data = [
-        {name: 'Black Coffee', photoSrc: "images/blacktea.jpg", price: 2.75, quantity: 0},
-        {name: 'Cold Brew', photoSrc: "images/coffeecoldbrew.JPG", price: 4, quantity: 0},
-        {name: 'Latte with Art', photoSrc: "images/latte-art.JPG", price: 3.50, quantity: 0},
-        {name: 'Siphoned Coffee', photoSrc: "images/coffeesiphon.JPG", price: 6, quantity: 0},
-        {name: 'Black Tea', photoSrc: "images/blacktea.JPG", price: 2.75, quantity: 0},
-        {name: 'Green Tea', photoSrc: "images/greentea.JPG", price: 2.75, quantity: 0},
-        {name: 'Vietnamese Iced', photoSrc: "images/vietnameseicedcoffee.JPG", price: 4, quantity: 0}
+        {name: 'Black Coffee', photoSrc: "images/coffeeblack.jpg", price: 2.75, quantity: 0},
+        {name: 'Cold Brew', photoSrc: "images/coffeecoldbrew.jpg", price: 4, quantity: 0},
+        {name: 'Latte with Art', photoSrc: "images/latte-art.jpg", price: 3.50, quantity: 0},
+        {name: 'Siphoned Coffee', photoSrc: "images/coffeesiphon.jpg", price: 6, quantity: 0},
+        {name: 'Black Tea', photoSrc: "images/blacktea.jpg", price: 2.75, quantity: 0},
+        {name: 'Green Tea', photoSrc: "images/greentea.jpg", price: 2.75, quantity: 0},
+        {name: 'Vietnamese Iced', photoSrc: "images/vietnameseicedcoffee.jpg", price: 4, quantity: 0}
     ];
 
 });
@@ -91,10 +91,10 @@ angular.module('myApp').controller('cartControl', ['$scope', 'cartService', func
 
 angular.module('myApp').controller('mainControl', function($scope) {
     $scope.photos = [
-        {name: 'item1', photoSrc: "images/coffeeblack.JPG"},
-        {name: 'item2', photoSrc: "images/greentea.JPG"},
-        {name: 'item3', photoSrc: "images/coffeecoldbrew.JPG"},
-        {name: 'item4', photoSrc: "images/latte-art.JPG"}
+        {name: 'item1', photoSrc: "images/coffeeblack.jpg"},
+        {name: 'item2', photoSrc: "images/greentea.jpg"},
+        {name: 'item3', photoSrc: "images/coffeecoldbrew.jpg"},
+        {name: 'item4', photoSrc: "images/latte-art.jpg"}
     ];
 
     $scope.hideForm = function() {
